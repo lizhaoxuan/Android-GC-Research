@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.zhaoxuan.bitmaptest.SplashTestActivity">
+
+    <Button
+        android:id="@+id/drawable_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="createDrawable" />
+
+
+    <Button
+        android:id="@+id/bitmap_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="createBitmap" />
+
+    <Button
+        android:id="@+id/drawable_once_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="createDrawable_Once" />
+
+</LinearLayout>

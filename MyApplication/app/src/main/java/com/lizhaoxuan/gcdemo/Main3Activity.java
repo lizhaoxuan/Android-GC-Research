@@ -50,7 +50,7 @@ public class Main3Activity extends AppCompatActivity implements View.OnClickList
 
         Resources res = getResources();
         for (int i = 0; i < 10; i++) {
-            Bitmap bmp = BitmapFactory.decodeResource(res, R.drawable.test_100);
+            Bitmap bmp = BitmapFactory.decodeResource(res, R.drawable.test_drawable);
             this.bitmapList.add(bmp);
         }
     }

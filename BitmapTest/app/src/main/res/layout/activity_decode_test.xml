@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.zhaoxuan.bitmaptest.DecodeTestActivity">
+
+    <Spinner
+        android:id="@+id/bitmap_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/stream_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="decodeStream"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/resource_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="decodeResource"
+        android:textSize="20sp" />
+
+</LinearLayout>

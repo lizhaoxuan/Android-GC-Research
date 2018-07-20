@@ -1,8 +1,8 @@
 package com.lizhaoxuan.gcdemo;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
@@ -15,7 +15,7 @@ import android.widget.Toast;
  * 5.循环内创建对象是否会引起内存抖动
  * 6.软引用\弱引用 ， 循环内外的GC差异
  */
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,14 +25,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         init();
     }
 
-    private void init(){
+    private void init() {
         findViewById(R.id.btn1).setOnClickListener(this);
         findViewById(R.id.btn2).setOnClickListener(this);
         findViewById(R.id.btn3).setOnClickListener(this);
         findViewById(R.id.btn4).setOnClickListener(this);
         findViewById(R.id.btn5).setOnClickListener(this);
         findViewById(R.id.btn6).setOnClickListener(this);
-
+        findViewById(R.id.btn7).setOnClickListener(this);
+        findViewById(R.id.btn8).setOnClickListener(this);
     }
 
 
@@ -82,7 +83,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         int id = v.getId();
-        switch (id){
+        switch (id) {
             case R.id.btn1:
                 startActivity(Main1Activity.class);
                 break;
@@ -101,6 +102,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn6:
                 startActivity(Main6Activity.class);
                 break;
+            case R.id.btn7:
+                startActivity(Main7Activity.class);
+                break;
+            case R.id.btn8:
+                startActivity(Main9Activity.class);
+                break;
         }
     }
 
@@ -108,7 +115,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
     }
 
-    private void startActivity(Class clazz){
-        startActivity(new Intent(this,clazz));
+    private void startActivity(Class clazz) {
+        startActivity(new Intent(this, clazz));
     }
 }

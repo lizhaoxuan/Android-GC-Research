@@ -39,7 +39,7 @@ public class Main5Activity extends AppCompatActivity implements View.OnClickList
      */
     private void btn1() {
         for (int i = 0; i < 20; i++) {
-            Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.test_100);
+            Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.test_drawable);
         }
     }
 

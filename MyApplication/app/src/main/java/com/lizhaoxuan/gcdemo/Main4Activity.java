@@ -57,7 +57,7 @@ public class Main4Activity extends AppCompatActivity implements View.OnClickList
      * 增加内存
      */
     private void btn1() {
-        Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.big_254);
+        Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.mdip);
         bitmapList.add(bmp);
     }
 
@@ -72,6 +72,6 @@ public class Main4Activity extends AppCompatActivity implements View.OnClickList
      * 再增加一个并显示
      */
     private void btn3() {
-        img.setImageResource(R.drawable.big_254);
+        img.setImageResource(R.drawable.mdip);
     }
 }

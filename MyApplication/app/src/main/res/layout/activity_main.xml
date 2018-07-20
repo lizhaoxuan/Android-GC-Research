@@ -3,47 +3,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/btn1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="手动调用GC方法，查看GC时机"/>
+        android:text="手动调用GC方法，查看GC时机" />
 
     <Button
         android:id="@+id/btn2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="空Activity的内存大小及GC时机"/>
+        android:text="空Activity的内存大小及GC时机" />
 
     <Button
         android:id="@+id/btn3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="非空大Activity的销毁时机"/>
+        android:text="非空大Activity的销毁时机" />
 
     <Button
         android:id="@+id/btn4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="濒临临界值情况下，对象=NULL，再次消耗内存，是否会溢出"/>
+        android:text="濒临临界值情况下，对象=NULL，再次消耗内存，是否会溢出" />
 
     <Button
         android:id="@+id/btn5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="循环内创建对象是否会引起内存抖动"/>
+        android:text="循环内创建对象是否会引起内存抖动" />
 
     <Button
         android:id="@+id/btn6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="软引用 \ 弱引用 ， 循环内外的GC差异"/>
+        android:text="软引用 \ 弱引用 ， 循环内外的GC差异" />
+
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="png测试" />
+
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="byte to Bitmap测试" />
 
 </LinearLayout>

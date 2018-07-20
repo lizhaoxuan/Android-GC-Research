@@ -61,7 +61,7 @@ public class Main6Activity extends AppCompatActivity implements View.OnClickList
         }
         Resources res = getResources();
         for (int i = 0; i < 10; i++) {
-            Bitmap bmp = BitmapFactory.decodeResource(res, R.drawable.big_254);
+            Bitmap bmp = BitmapFactory.decodeResource(res, R.drawable.mdip);
             list.add(bmp);
         }
 
@@ -72,7 +72,7 @@ public class Main6Activity extends AppCompatActivity implements View.OnClickList
         List<Bitmap> list = null;
         Resources res = getResources();
         for (int i = 0; i < 10; i++) {
-            Bitmap bmp = BitmapFactory.decodeResource(res, R.drawable.big_254);
+            Bitmap bmp = BitmapFactory.decodeResource(res, R.drawable.mdip);
             list = weakReference.get();
             if (list == null) {
                 list = new ArrayList<>();
@@ -87,7 +87,7 @@ public class Main6Activity extends AppCompatActivity implements View.OnClickList
     private void listRefrence(){
         Resources res = getResources();
         for (int i = 0; i < 10; i++) {
-            Bitmap bmp = BitmapFactory.decodeResource(res, R.drawable.big_254);
+            Bitmap bmp = BitmapFactory.decodeResource(res, R.drawable.mdip);
             right.add(new SoftReference<>(bmp));
         }
     }
